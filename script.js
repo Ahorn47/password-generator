@@ -5,8 +5,7 @@ var confirmLower;
 var confirmUpper;
 var confirmNumber;
 var confirmSpecialCase;
-    
-
+var userChoices;
 
 
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -50,6 +49,10 @@ function generatePassword () {
         confirmNumber= confirm("Will this have numbers included?");
         console.log ("Numbers"+ confirmNumber);
         confirmSpecialCase = confirm ("Will this have special case characters?");
-        console.log ("Special Characters" + confirmSpecialCase); }
+        console.log ("Special Characters" + confirmSpecialCase); 
 
     };
+    else if (confirmLower && confirmUpper confirmSpecialCase){
+        userChoices = lowercase.concat(upperCase, numbers , special);
+        console.log(userChoices);
+    }
