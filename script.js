@@ -23,10 +23,9 @@ var special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", 
 function writePassword() {
     var password = generatePassword ();
     var passwordText = document.querySelector("#password");
-
     passwordText.value = password;
-
 }
+
 generateBtn.addEventListener("click", writePassword); 
 // Start function
 function generatePassword () {
@@ -50,7 +49,6 @@ function generatePassword () {
         console.log ("Numbers"+ confirmNumber);
         confirmSpecialCase = confirm ("Will this have special case characters?");
         console.log ("Special Characters" + confirmSpecialCase); 
-
     };
     else if (confirmLower && confirmUpper confirmSpecialCase){
         userChoices = lowercase.concat(upperCase, numbers , special);
